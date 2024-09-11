@@ -6,6 +6,21 @@ This is a learning repo for an example application build using:
 - [Chakra ui](https://v2.chakra-ui.com/): For front end styling and components.
 - [Vite](https://vitejs.dev/): Build tool which is building in popularity it seems
 
+## Prerequisites
+
+As this is a learning app I am not putting too much detail into securing keys
+etc, but I have added `.env` locally to contain the API key for the [rawg.io](https://rawg.io/apidocs) being used.
+
+Creating a key is pretty simple and currently allows 20,000 requests per month on the free plan.
+
+content for this file is
+
+```
+VITE_RAWG_API_KEY=ADD_YOUR_OWN_KEY_HERE
+```
+
+So create the file locally, save what is above into that file and restart the server.
+
 ## Running the app
 
 ```
