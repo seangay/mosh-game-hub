@@ -9,7 +9,7 @@ This is a learning repo for an example application build using:
 ## Prerequisites
 
 As this is a learning app I am not putting too much detail into securing keys
-etc, but I have added `.env` locally to contain the API key for the [rawg.io](https://rawg.io/apidocs) being used.
+etc, but I have added `.env.local` locally to contain the API key for the [rawg.io](https://rawg.io/apidocs) being used.
 
 Creating a key is pretty simple and currently allows 20,000 requests per month on the free plan.
 
@@ -31,3 +31,15 @@ npm run dev
 ```
 
 Then open a browser to the app on http://localhost:5173
+
+## Deployment
+
+I have set up automatic deployment to vercel which is currently configured to build and deploy on commits.
+
+The site has been deployed to [Ogre's Game Hub](https://ogre-game-hub.vercel.app/) for viewing.
+
+### Considerations
+
+Having the API key for RAWG deployed with the app isn't ideal for security purposes.
+
+Given that this is a learning exercise, I am not too concerned with the implementation. I have used [vercel's Environment Variables](https://vercel.com/docs/projects/environment-variables) to store the API key as a
